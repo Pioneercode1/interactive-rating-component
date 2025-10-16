@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
@@ -20,28 +24,32 @@
       <legend id="heading-rating">How did we do?</legend>
       <p>Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!</p>
-      <div>
-        <label for="star-1" class="radio-button">1</label>
+      <div id="div-radio-buttons">
         <input type="radio" id="star-1" class="hidden-radio" name="star-rating" value="1">
-        <label for="star-2" class="radio-button">2</label>
+        <label for="star-1" class="radio-button">1</label>
+
         <input type="radio" id="star-2" class="hidden-radio" name="star-rating" value="2">
-        <label for="star-3" class="radio-button">3</label>
+        <label for="star-2" class="radio-button">2</label>
+
         <input type="radio" id="star-3" class="hidden-radio" name="star-rating" value="3">
-        <label for="star-4" class="radio-button">4</label>
+        <label for="star-3" class="radio-button">3</label>
+
         <input type="radio" id="star-4" class="hidden-radio" name="star-rating" value="4">
-        <label for="star-5" class="radio-button">5</label>
+        <label for="star-4" class="radio-button">4</label>
+
         <input type="radio" id="star-5" class="hidden-radio" name="star-rating" value="5">
+        <label for="star-5" class="radio-button">5</label>
       </div>
-      <input type="submit" id="button-submit" name="button-submit" value="Submit">
+      <button id="button-submit">submit</button>
     </fieldset>
   </form>
 
-<div>
+  <div>
     You selected <!-- Add rating here --> out of 5
-  <h3>Thank you!</h3>
-  <p>We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch!</p>
-</div>
+    <h3>Thank you!</h3>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+  </div>
 
 </body>
 

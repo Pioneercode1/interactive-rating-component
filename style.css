@@ -1,5 +1,6 @@
 :root {
     --white: hsl(0, 100%, 100%);
+    --orange-button: hsl(25, 97%, 53%);
     --grey500: hsl(217, 12%, 63%);
     --grey700: hsl(213, 18%, 24%);
     --grey900: hsl(213, 19%, 18%);
@@ -16,21 +17,27 @@ body {
     background-color: var(--grey950);
     min-height: 100vh;
     color: var(--white);
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #img-star-top {
     background-color: var(--grey700);
-    padding: 5px;
+    padding: 10px;
     border-radius: 50%;
     margin-block: 1rem;
 }
 
 #interactive-rating {
-   width: clamp();
-   background-color: var(--grey900);
-   margin: 4rem auto;
-   padding-inline: 1.5rem;
-   padding-block: 1rem;
+    width: clamp(300px, 50%, 22rem);
+    height: 24rem;
+    background-color: var(--grey900);
+    margin: 6rem auto;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    border-radius: 16px;
 }
 
 fieldset {
@@ -39,9 +46,71 @@ fieldset {
 
 #heading-rating {
     font-size: x-large;
+    font-weight: 700;
     margin-block-end: 1rem;
 }
 
+fieldset p {
+    font-size: 15px;
+    color: var(--grey500);
+    margin-block: 1rem;
+}
 
+#div-radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.hidden-radio {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
 
+.radio-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 0.7rem;
+    background-color: var(--grey700);
+    border-radius: 50%;
+}
+
+.hidden-radio:checked+.radio-button {
+    background-color: var(--white);
+    color: black;
+}
+
+.radio-button:hover {
+    background-color: var(--orange-button);
+    color: black;
+    cursor: pointer;
+}
+
+#button-submit {
+    width: 100%;
+    padding: 14px;
+    margin: 15px auto;
+    border-radius: 24px;
+    background-color: var(--orange-button);
+    font-weight: 700;
+    text-align: center;
+}
+
+#button-submit:hover {
+    background-color: var(--white);
+    color: black;
+    cursor: pointer;
+}
+
+@media (min-width: 90rem) {
+    #interactive-rating {
+        width: clamp(375px, 50%, 23rem);
+        height: 25rem;
+    }
+}
