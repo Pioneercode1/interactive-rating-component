@@ -48,6 +48,7 @@ fieldset {
     font-size: x-large;
     font-weight: 700;
     margin-block-end: 1rem;
+    letter-spacing: 1px;
 }
 
 fieldset p {
@@ -79,6 +80,7 @@ fieldset p {
     font-size: 0.7rem;
     background-color: var(--grey700);
     border-radius: 50%;
+    transition: background-color 0.5s ease-in;
 }
 
 .hidden-radio:checked+.radio-button {
@@ -92,6 +94,13 @@ fieldset p {
     cursor: pointer;
 }
 
+.radio-button:focus {
+    background-color: var(--orange-button);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
 #button-submit {
     width: 100%;
     padding: 14px;
@@ -100,12 +109,22 @@ fieldset p {
     background-color: var(--orange-button);
     font-weight: 700;
     text-align: center;
+    letter-spacing: 2px;
+    transition: background-color 1s ease-in;
 }
 
 #button-submit:hover {
     background-color: var(--white);
     color: black;
     cursor: pointer;
+    transition: background-color 0.3s linear;
+}
+
+#button-submit:focus {
+    background-color: var(--white);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s linear;
 }
 
 @media (min-width: 90rem) {
