@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+
+<body>
+
+  <form id="interactive-rating">
+    <img id="img-star-top" src="./images/icon-star.svg" alt=" icon star" title="icon star for rating">
+    <fieldset>
+      <legend id="heading-rating">How did we do?</legend>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <div>
+        <label for="star-1" class="radio-button">1</label>
+        <input type="radio" id="star-1" class="hidden-radio" name="star-rating" value="1">
+        <label for="star-2" class="radio-button">2</label>
+        <input type="radio" id="star-2" class="hidden-radio" name="star-rating" value="2">
+        <label for="star-3" class="radio-button">3</label>
+        <input type="radio" id="star-3" class="hidden-radio" name="star-rating" value="3">
+        <label for="star-4" class="radio-button">4</label>
+        <input type="radio" id="star-4" class="hidden-radio" name="star-rating" value="4">
+        <label for="star-5" class="radio-button">5</label>
+        <input type="radio" id="star-5" class="hidden-radio" name="star-rating" value="5">
+      </div>
+      <input type="submit" id="button-submit" name="button-submit" value="Submit">
+    </fieldset>
+  </form>
+
+<div>
+    You selected <!-- Add rating here --> out of 5
+  <h3>Thank you!</h3>
+  <p>We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!</p>
+</div>
+
+</body>
+
+</html>
