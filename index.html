@@ -44,13 +44,14 @@
     </fieldset>
   </form>
 
-  <div>
-    You selected <!-- Add rating here --> out of 5
+  <div class="status-message-show" role="status" aria-live="polite" style="display: none;">
+    <img src="./images/illustration-thank-you.svg">
+    <p>You selected <span id="selected-rating"></span> out of 5</p>
     <h3>Thank you!</h3>
     <p>We appreciate you taking the time to give a rating. If you ever need more support,
       don’t hesitate to get in touch!</p>
   </div>
-
+<script src="script.js"></script>
 </body>
 
 </html>

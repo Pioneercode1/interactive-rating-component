@@ -133,3 +133,51 @@ fieldset p {
         height: 25rem;
     }
 }
+
+.status-message-show {
+    position: absolute;
+    top: 0;
+    left: 11.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: clamp(300px, 50%, 22rem);
+    height: 24rem;
+    background-color: var(--grey900);
+    margin: 6rem auto;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    border-radius: 16px;
+}
+
+.status-message-show img {
+    margin: 0 auto;
+    width: 55%;
+}
+
+.status-message-show p:nth-of-type(1) {
+    width: 65%;
+    padding: 8px;
+    background-color: var(--grey700);
+    border-radius: 20px;
+    text-align: center;
+    color: var(--orange-button);
+}
+
+.status-message-show h3 {
+    font-size: x-large;
+}
+
+.status-message-show p:nth-of-type(2) {
+    color: var(--grey500);
+    text-align: justify;
+}
+
+@media (min-width: 90rem) {
+    .status-message-show {
+        width: clamp(375px, 50%, 23rem);
+        height: 25rem;
+    }
+}
