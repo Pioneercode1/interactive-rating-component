@@ -135,9 +135,6 @@ fieldset p {
 }
 
 .status-message-show {
-    position: absolute;
-    top: 0;
-    left: 11.5rem;
     display: none;
     flex-direction: column;
     justify-content: center;
