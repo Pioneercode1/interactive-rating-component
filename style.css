@@ -21,6 +21,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #img-star-top {
@@ -34,7 +37,6 @@ body {
     width: clamp(300px, 50%, 22rem);
     height: 24rem;
     background-color: var(--grey900);
-    margin: 6rem auto;
     padding-inline: 1rem;
     padding-block: 1rem;
     border-radius: 16px;
@@ -143,7 +145,6 @@ fieldset p {
     width: clamp(300px, 50%, 22rem);
     height: 24rem;
     background-color: var(--grey900);
-    margin: 6rem auto;
     padding-inline: 1rem;
     padding-block: 1rem;
     border-radius: 16px;
