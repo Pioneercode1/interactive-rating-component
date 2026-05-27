@@ -28,19 +28,21 @@ body {
 
 #img-star-top {
     background-color: var(--grey700);
-    padding: 10px;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 12px;
     border-radius: 50%;
     margin-block-start: 0.8rem;
-    margin-block-end: 1.3rem;
+    margin-block-end: 1.4rem;
 }
 
 #interactive-rating {
     width: clamp(300px, 50%, 22rem);
     /* height: 24rem; */
     background-color: var(--grey900);
-    padding-inline: 1rem;
+    padding-inline: 1.3rem;
     padding-block: 1rem;
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
 fieldset {
@@ -77,14 +79,14 @@ fieldset p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 1.3rem;
     margin: 0.5rem;
     font-size: 0.7rem;
     background-color: var(--grey700);
     border-radius: 50%;
-    transition: background-color 0.5s ease-in;
+    transition: background-color 0.4s ease-in;
 }
 
 .hidden-radio:checked+.radio-button {
